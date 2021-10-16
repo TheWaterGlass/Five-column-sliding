@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Titillium+Web:wght@200&family=Anton&display=swap');
+
+body {
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0,
+}
+li {
+    list-style-type: none;
+}
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 3em;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+#kassos h3 {
+    font-size: 2em;
+}
+/* ******************************** NAVBAR ******************************** */
+nav {
+    overflow:  hidden;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100%;
+    opacity: 1;
+}
+header li {
+    float: right;
+    font-size: 1.2em;
+}
+header li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+}
+#logo {
+    font-family: 'Titillium Web', cursive;
+    font-weight: bold;
+    float: left;
+}
+/* ************************ IMAGE PRINCIPAL ******************************** */
+#imagePrincipale {
+    padding-top: 60px;
+    background: url(media/lolbanner.png) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 799px;
+}
+h1 {
+    font-family: 'Anton', cursive;
+    text-align: center;
+    color:limegreen;
+    font-size: 10em;
+    margin-top: 220px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 3px 2px black;
+}
+h3 {
+    text-align: center  ;
+}
+/* ******************************** MEMBRES ***************************** */
+#membres {
+    padding: 10px 0px 100 px 0px;
+}
+#textIntro {
+    padding: 10px 20%;
+}
+#kassos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10%;
+    text-align: center;
+}
+#equipe {
+    margin-block-end: -3em;
+    margin-block-start: 5em;
+}
+.imagesJoueurs h3 h4 {
+    font-family: 'Anton', cursive;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 15px;
+    font-weight: 200;
+}
+.imagesJoueurs img {
+    border-radius: 5px;
+    outline: 4px solid rgb(2, 78, 19);
+    outline-offset: -1px;
+}
+.imagesJoueurs img:hover {
+    opacity: 0.8;
+    transform: scale(1.03);
+    transition: 0.8s ease-in-out;
+}
+/* ******************************* REALISATION ******************************* */
+#realisation {
+    height: 1400        ;
+    background-color: whitesmoke;
+    padding: 15px 2%;
+}
+#realisations ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#realisations li {
+    padding: 15px;
+}
+#realisations p {
+    text-align: center;
+    font-size: 1.5em;
+}
+.imgtropbelle {
+    height: 450px;
+    width: 900px;
+    padding-bottom: 20px;
+}
+/* **************************** FOOTER ************************************* */
+footer {
+    background-color: rgba(0, 0, 0, 0.89);
+    color: whitesmoke;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+form {
+    margin: 0 auto;
+    max-width: 900px;
+}
+input, button {
+    border: none;
+    width: 55%;
+    padding: 15px 10px;
+    margin: 1px 0;
+    font-size: 1em;
+    font-family: 'Anton', sans-serif;
+    border-radius: 8px;
+}
+button {
+    font-size: 1.2em;
+    background-color: rgb(95, 90, 90);
+}
+
+#deuxiemeTrait {
+    height: 1px;
+    width: 55%;
+    background-color: whitesmoke;
+    margin: 60px auto;
+}
+#Icons {
+    text-align: center;
+}
+#Icons a {
+    display: inline-block;
+    font-size: 1.9em;
+    color: rgb(70, 184, 17);
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 0 16px;
+    transition: .4s linear;
+}
+
+#Icons a::before, #Icons a::after{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: .4s linear;
+}
+
+#Icons a:hover{
+    transform: scale(.8);
+}
+#Icons a:hover::before{
+    border-left: 1px solid;
+    border-right: 1px solid;
+    transform: skewX(20deg); 
+}
+#Icons a:hover::after{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    transform: skewY(-20deg); 
+}
